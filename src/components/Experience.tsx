@@ -4,11 +4,11 @@ import SectionHeading from "./SectionHeading";
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-24 px-5 md:px-8 border-t border-line">
+    <section id="experience" className="py-24 px-5 md:px-8 border-t border-accent/15">
       <div className="max-w-6xl mx-auto">
-        <SectionHeading index="05" title="Experience & Education" />
+        <SectionHeading index="V" title="Experience & Education" />
 
-        <div className="relative pl-8 border-l border-line mb-16">
+        <div className="relative pl-8 border-l border-accent/25 mb-16">
           {experience.map((exp) => (
             <div key={exp.role} className="relative pb-2">
               <span className="absolute -left-[calc(2rem+5px)] top-1.5 w-2.5 h-2.5 rounded-full bg-accent ring-4 ring-paper" />
@@ -36,7 +36,7 @@ export default function Experience() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.4, delay: i * 0.06 }}
-              className="rounded-lg border border-line p-5"
+              className="rounded-lg border border-accent/20 p-5"
             >
               <p className="font-display font-medium text-base mb-2 text-ink">{ed.degree}</p>
               <p className="text-sm text-muted mb-3">{ed.school}</p>
@@ -49,7 +49,7 @@ export default function Experience() {
           <p className="font-mono text-xs uppercase tracking-widest text-muted mb-3">Relevant Coursework</p>
           <div className="flex flex-wrap gap-2">
             {coursework.map((c) => (
-              <span key={c} className="font-mono text-xs px-3 py-1.5 rounded border border-line text-ink-soft">
+              <span key={c} className="font-mono text-xs px-3 py-1.5 rounded border border-accent/25 text-ink-soft">
                 {c}
               </span>
             ))}

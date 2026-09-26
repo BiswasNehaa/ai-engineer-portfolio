@@ -4,9 +4,9 @@ import SectionHeading from "./SectionHeading";
 
 export default function OpenSource() {
   return (
-    <section id="open-source" className="py-24 px-5 md:px-8 border-t border-line">
+    <section id="open-source" className="py-24 px-5 md:px-8 border-t border-accent/15">
       <div className="max-w-6xl mx-auto">
-        <SectionHeading index="04" title="Open Source" />
+        <SectionHeading index="IV" title="Open Source" />
         <p className="text-lg text-ink-soft max-w-2xl mb-2">{openSource.summary}</p>
         <p className="font-mono text-sm text-muted max-w-2xl mb-10">{openSource.maintainer}</p>
 
@@ -21,7 +21,7 @@ export default function OpenSource() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.4, delay: i * 0.05 }}
-              className="group rounded-xl border border-line p-6 hover:border-accent transition-colors"
+              className="group rounded-xl border border-accent/20 p-6 hover:border-accent transition-colors"
             >
               <div className="flex items-center justify-between mb-3">
                 <span className="font-mono text-[11px] uppercase tracking-widest text-accent">{repo.org}</span>

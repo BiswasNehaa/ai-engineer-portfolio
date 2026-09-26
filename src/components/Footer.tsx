@@ -2,7 +2,7 @@ import { profile } from "../data/content";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-line py-10 px-5 md:px-8">
+    <footer className="border-t border-accent/15 py-10 px-5 md:px-8">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="text-center md:text-left">
           <p className="font-display font-semibold text-sm text-ink">Designed &amp; built by {profile.name}</p>

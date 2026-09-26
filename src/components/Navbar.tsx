@@ -14,7 +14,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50 bg-paper/90 backdrop-blur-sm border-b border-line">
+    <header className="fixed top-0 inset-x-0 z-50 bg-paper/90 backdrop-blur-sm border-b border-accent/20">
       <nav className="max-w-6xl mx-auto px-5 md:px-8 h-16 flex items-center justify-between">
         <a href="#home" className="focus-ring font-display font-bold text-lg tracking-tight text-ink">
           NEHA<span className="text-accent">.</span>
@@ -32,7 +32,7 @@ export default function Navbar() {
 
         <a
           href="#contact"
-          className="focus-ring hidden md:inline-flex px-4 py-2 rounded-full bg-ink text-paper font-mono text-xs uppercase tracking-widest hover:bg-accent transition-colors"
+          className="focus-ring hidden md:inline-flex px-4 py-2 rounded-full border border-accent/50 text-ink font-mono text-xs uppercase tracking-widest hover:bg-accent hover:text-paper hover:border-accent transition-colors"
         >
           Let&rsquo;s Talk
         </a>
@@ -58,7 +58,7 @@ export default function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="md:hidden overflow-hidden border-t border-line font-mono text-sm uppercase tracking-widest"
+            className="md:hidden overflow-hidden border-t border-accent/20 font-mono text-sm uppercase tracking-widest"
           >
             {links.map((l) => (
               <li key={l.href}>

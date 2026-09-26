@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Ornament from "./Ornament";
 
 export default function SectionHeading({ index, title }: { index: string; title: string }) {
   return (
@@ -7,11 +8,14 @@ export default function SectionHeading({ index, title }: { index: string; title:
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.6 }}
-      className="flex items-baseline gap-4 mb-12"
+      className="mb-14"
     >
-      <span className="font-mono text-xs text-accent">{index}</span>
-      <h2 className="font-display font-bold text-3xl md:text-5xl text-ink tracking-tight">{title}</h2>
-      <span className="flex-1 h-px bg-line ml-2" />
+      <div className="flex items-center gap-3 mb-4">
+        <Ornament className="w-3 h-3 text-accent" />
+        <span className="font-mono text-xs uppercase tracking-[0.35em] text-accent">Chapter {index}</span>
+      </div>
+      <h2 className="font-display font-semibold text-4xl md:text-6xl text-ink tracking-tight">{title}</h2>
+      <div className="w-24 h-px bg-accent mt-6" />
     </motion.div>
   );
 }

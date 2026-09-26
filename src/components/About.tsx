@@ -4,9 +4,9 @@ import SectionHeading from "./SectionHeading";
 
 export default function About() {
   return (
-    <section id="about" className="py-24 px-5 md:px-8 border-t border-line">
+    <section id="about" className="py-24 px-5 md:px-8 border-t border-accent/15">
       <div className="max-w-6xl mx-auto">
-        <SectionHeading index="01" title="About" />
+        <SectionHeading index="I" title="About" />
         <div className="grid md:grid-cols-5 gap-12">
           <div className="md:col-span-3">
             <p className="font-display text-2xl md:text-4xl leading-snug text-ink">
